@@ -1,0 +1,111 @@
+:root {
+    --brandy-red: #854632;
+    --dark-raspberry: #7A284E;
+    --dark-charcoal: #312E2C;
+    --wenge-brown: #5F564D;
+    --eggshell: #F3E5D7;
+    --white-coffee: #E3DDD7;
+    --snow: #FFF7FB;
+    --white: #FFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 23.4375rem;
+    color: var(--wenge-brown);
+    font-family: 'Outfit', sans-serif;
+}
+
+.omelette-img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    padding: 2.5rem 2rem;
+}
+
+.recipe-title {
+    color: var(--dark-charcoal);
+    font-size: 2.25rem;
+    font-family: 'Young Serif', sans-serif;
+    line-height: 1;
+    margin: 0 0 2rem 0;
+}
+
+.recipe-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 0 2rem 0;
+}
+
+/* Utility */
+
+.list {
+    padding: 0;
+    margin: 0 0 0 1.5rem;
+    list-style-position: outside;
+}
+
+.prep-container {
+    background-color: var(--snow);
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.prep-heading {
+    color: var(--dark-raspberry);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0 0 1rem 0;
+}
+
+.prep-list li {
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.prep-list li:last-child {
+    margin-bottom: 0;
+}
+
+.prep-list li::marker {
+    color: var(--dark-raspberry);
+}
+
+.section-heading {
+    color: var(--brandy-red);
+    font-family: 'Young Serif', sans-serif;
+    font-size: 1.75rem;
+    line-height: 1;
+    margin: 2rem 0;
+}
+
+.ingredient-list {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.ingredient-list li {
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.ingredient-list li:last-child {
+    margin-bottom: 0;
+}
+
+.instructions-list {
+    margin: 0;
+    padding: 0;
+}
+
+
+

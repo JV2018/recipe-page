@@ -18,6 +18,8 @@ body {
     padding: 0;
     width: 23.4375rem;
     color: var(--wenge-brown);
+    font-size: 1rem;
+    line-height: 1.5;
     font-family: 'Outfit', sans-serif;
 }
 
@@ -40,8 +42,6 @@ body {
 }
 
 .recipe-description {
-    font-size: 1rem;
-    line-height: 1.5;
     margin: 0 0 2rem 0;
 }
 
@@ -51,6 +51,19 @@ body {
     padding: 0;
     margin: 0 0 0 1.5rem;
     list-style-position: outside;
+}
+
+.list li {
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.list li:last-child {
+    margin-bottom: 0;
+}
+
+.bold-text {
+    font-weight: 700;
 }
 
 .prep-container {
@@ -65,15 +78,6 @@ body {
     font-weight: 600;
     line-height: 1;
     margin: 0 0 1rem 0;
-}
-
-.prep-list li {
-    padding-left: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.prep-list li:last-child {
-    margin-bottom: 0;
 }
 
 .prep-list li::marker {
@@ -96,36 +100,22 @@ body {
     margin: 0 0 1.5rem 0;
 }
 
-.ingredient-list {
-    font-size: 1rem;
-    line-height: 1.5;
+.ingredient-list li::marker {
+    color: var(--brandy-red);
 }
 
-.ingredient-list li {
-    padding-left: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.ingredient-list li:last-child {
-    margin-bottom: 0;
-}
-
-.instructions-list li {
-    padding-left: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.instructions-list li:last-child {
-    margin-bottom: 0;
+.ingredients-container,
+.instructions-container {
+    border-bottom: 1px solid var(--white-coffee);
+    padding-bottom: 2rem;
 }
 
 .instructions-list li::marker {
-    color: var(--dark-raspberry);
+    color: var(--brandy-red);
+    font-weight: 700;
 }
 
 .nutrition-text {
-    font-size: 1rem;
-    line-height: 1.5;
     margin-top: 0;
     margin-bottom: 1.5rem;
     border: 1px solid #FFF;
@@ -133,11 +123,6 @@ body {
 
 .nutrition-table {
     padding: 0 2rem;
-}
-
-.nutrition-row {
-    font-size: 1rem;
-    line-height: 1.5;
 }
 
 .nutrition-category {
@@ -148,6 +133,11 @@ body {
     color: var(--brandy-red);
     font-weight: 700;
     padding: 0.75rem 0;
+}
+
+.nutrition-category,
+.nutrition-data {
+    border-bottom: 1px solid var(--white-coffee);
 }
 
 .nutrition-row:first-child .nutrition-category,
@@ -161,10 +151,7 @@ body {
     border-bottom: none;
 }
 
-.nutrition-category,
-.nutrition-data {
-    border-bottom: 1px solid var(--white-coffee);
-}
+
 
 
 

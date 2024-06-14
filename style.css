@@ -20,10 +20,15 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--eggshell);
 }
 
 .container {
     width: 23.4375rem;
+    background-color: #FFF;
 }
 
 .omelette-img {
@@ -125,10 +130,11 @@ body {
 
 .nutrition-table {
     padding: 0 2rem;
+    width: 100%;
 }
 
 .nutrition-category {
-    padding: 0.75rem 4rem 0.75rem 0;
+    padding: 0.75rem 0;
 }
 
 .nutrition-data {
@@ -137,8 +143,7 @@ body {
     padding: 0.75rem 0;
 }
 
-.nutrition-category,
-.nutrition-data {
+.nutrition-row td {
     border-bottom: 1px solid var(--white-coffee);
 }
 
@@ -151,6 +156,58 @@ body {
 .nutrition-row:last-child .nutrition-data {
     padding-bottom: 0;
     border-bottom: none;
+}
+
+@media (min-width: 376px) {
+
+    body {
+        min-height: 100vh;
+        padding: 1rem 0;
+    }
+    
+    .container {
+        border-radius: 24px;
+        padding: 2.5rem;
+        height: 100%;
+    }
+
+    .omelette-img {
+        border-radius: 12px;
+    }
+
+    .main-container {
+        padding: 2.5rem 0 0 0;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 2rem 0;
+    }
+    
+    .container {
+        width: 32rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        padding: 4rem 0;
+    }
+
+    .container {
+        width: 34rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        padding: 7.75rem 0;
+    }
+    
+    .container {
+        width: 46rem;
+    }
 }
 
 

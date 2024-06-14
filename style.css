@@ -31,6 +31,7 @@ body {
     background-color: #FFF;
 }
 
+
 .omelette-img {
     width: 100%;
     height: auto;
@@ -39,6 +40,8 @@ body {
 .main-container {
     padding: 2.5rem 2rem;
 }
+
+/* Recipe Header */
 
 .recipe-title {
     color: var(--dark-charcoal);
@@ -53,6 +56,22 @@ body {
 }
 
 /* Utility */
+
+.section-container {
+    margin: 0 0 2rem 0;
+}
+
+.section-container:nth-of-type(4) {
+    margin: 0;
+}
+
+.section-heading {
+    color: var(--brandy-red);
+    font-family: 'Young Serif', sans-serif;
+    font-size: 1.75rem;
+    line-height: 1;
+    margin: 0 0 1.5rem 0;
+}
 
 .list {
     padding: 0;
@@ -73,6 +92,8 @@ body {
     font-weight: 700;
 }
 
+/* Preparation Time Box */
+
 .prep-container {
     background-color: var(--snow);
     padding: 1.5rem;
@@ -91,25 +112,7 @@ body {
     color: var(--dark-raspberry);
 }
 
-.section-container {
-    margin: 0 0 2rem 0;
-}
-
-.section-container:nth-of-type(4) {
-    margin: 0;
-}
-
-.section-heading {
-    color: var(--brandy-red);
-    font-family: 'Young Serif', sans-serif;
-    font-size: 1.75rem;
-    line-height: 1;
-    margin: 0 0 1.5rem 0;
-}
-
-.ingredient-list li::marker {
-    color: var(--brandy-red);
-}
+/* Ingredient and Instruction Lists */ 
 
 .ingredients-container,
 .instructions-container {
@@ -117,10 +120,16 @@ body {
     padding-bottom: 2rem;
 }
 
+.ingredient-list li::marker {
+    color: var(--brandy-red);
+}
+
 .instructions-list li::marker {
     color: var(--brandy-red);
     font-weight: 700;
 }
+
+/* Nutrition Section */
 
 .nutrition-text {
     margin-top: 0;
